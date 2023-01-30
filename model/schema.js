@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const TodoSchema = new mongoose.Schema({
   id: { type: String },
   titulo: { type: String },
-  año: { type: String },
+  ano: { type: String },
   tiempo: { type: String },
   lenguaje: { type: String },
-  fechaLanzamiento: { type: String },
+  fechalanzamiento: { type: String },
   pais: { type: String }
 });
 
-module.exports = mongoose.model("todo", TodoSchema);
+module.exports = mongoose.model("pelicula", TodoSchema);

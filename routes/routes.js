@@ -13,7 +13,13 @@ router.get("/get/pelicula", async (req, res) => {
   router.post("/new/pelicula", async (req, res) => {
     try{
       const newPelicula = new Todo({
-        pelicula: req.body.pelicula
+        id: req.body.id,
+        titulo: req.body.titulo,
+        ano: req.body.ano,
+        tiempo: req.body.tiempo,
+        lenguaje: req.body.lenguaje,
+        fechalanzamiento: req.body.fechalanzamiento,
+        pais: req.body.pais
       });
       const savePelicula = await newPelicula.save();
       res.status(200).json(savePelicula);
