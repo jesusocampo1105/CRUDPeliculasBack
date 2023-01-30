@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 const PORT = 3000;
 
-const routes = require("../Server/routes/routes");
+const routes = require("./routes/routes");
 const connectionOptions ={ useUnifiedTopology: true,
     useNewUrlParser: true, useFindAndModify: false};
 
