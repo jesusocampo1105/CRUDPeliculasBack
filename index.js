@@ -13,6 +13,8 @@ const connectionOptions ={ useUnifiedTopology: true,
 app.use(express.json());
 app.use(cors());
 
+mongoose.set('strictQuery', false);
+
 mongoose.connect("mongodb+srv://jesusocampo1105:Colombia2020**@peliculascrud.cefxvzm.mongodb.net/?retryWrites=true&w=majority")
 .then(() => console.log("Connected successfully"))
 .catch((err) => console.error(err));
