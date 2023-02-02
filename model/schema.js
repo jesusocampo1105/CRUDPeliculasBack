@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Schema permite definir el esquema de los datos
 const TodoSchema = new mongoose.Schema({
   id: { type: String },
   titulo: { type: String },
@@ -10,4 +11,5 @@ const TodoSchema = new mongoose.Schema({
   pais: { type: String }
 });
 
+// Se define el nombre del modelo "pelicula" para poder reutilizar y como estructura o esquema se tomará a TodoSchema
 module.exports = mongoose.model("pelicula", TodoSchema);
